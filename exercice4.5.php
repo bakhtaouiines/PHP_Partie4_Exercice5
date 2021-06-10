@@ -1,3 +1,10 @@
+<?php
+    $string = "Frodo Baggins";
+    $integer = 2968;
+    function result($string,$integer) : string 
+    {
+        return $string . $integer;
+    }?> 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,13 +15,6 @@
 </head>
 <body>
     <h1>Exercice 5 Partie 4 : Les fonctions PHP</h1>
-    <?php
-    $string = "Frodo Baggins";
-    $integer = 2968;
-    function result($string,$integer) : string 
-    {
-        return $string . $integer;
-    }?> 
     <p><?=$string?> est né en l'an <?=$integer?> T.A.</p>  
 </body>
 </html>
