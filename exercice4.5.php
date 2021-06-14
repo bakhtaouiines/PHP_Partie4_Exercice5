@@ -1,7 +1,8 @@
 <?php
-function result($string,$integer) : string 
+declare(strict_types = 1);
+function result(string $string, int $integer) : string 
     {
-        return "$string est né en l'an $integer T.A.";
+        return $string. 'est né en l\'an' .$integer. 'T.A.';
     }?> 
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,6 +15,6 @@ function result($string,$integer) : string
 <body>
     <h1>Exercice 5 Partie 4 : Les fonctions PHP</h1>
     <p>
-    <?=result("Frodo Baggins",2968)?></p>  
+    <?=result('Frodo Baggins',2968)?></p>  
 </body>
 </html>
